@@ -1,0 +1,11 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    // For EsLint
+    "source.fixAll.eslint": true,
+    // For TsLint
+    "source.fixAll.tslint": true,
+    // For StyleLint
+    "source.fixAll.stylelint": true
+  }
+}

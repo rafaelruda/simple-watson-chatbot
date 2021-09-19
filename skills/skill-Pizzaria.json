@@ -1,0 +1,940 @@
+{
+  "intents": [
+    {
+      "intent": "Confirmacao",
+      "examples": [
+        {
+          "text": "aprovado"
+        },
+        {
+          "text": "beleza"
+        },
+        {
+          "text": "blz"
+        },
+        {
+          "text": "certeza"
+        },
+        {
+          "text": "certinho"
+        },
+        {
+          "text": "certo"
+        },
+        {
+          "text": "cetinho"
+        },
+        {
+          "text": "concordo"
+        },
+        {
+          "text": "confirmado"
+        },
+        {
+          "text": "correto"
+        },
+        {
+          "text": "é"
+        },
+        {
+          "text": "está certo"
+        },
+        {
+          "text": "está correto"
+        },
+        {
+          "text": "está serto"
+        },
+        {
+          "text": "issae"
+        },
+        {
+          "text": "issae mermão"
+        },
+        {
+          "text": "k"
+        },
+        {
+          "text": "ok"
+        },
+        {
+          "text": "s"
+        },
+        {
+          "text": "serto"
+        },
+        {
+          "text": "sim"
+        },
+        {
+          "text": "ta beleza"
+        },
+        {
+          "text": "ta bom"
+        },
+        {
+          "text": "ta certo"
+        },
+        {
+          "text": "ta massa"
+        },
+        {
+          "text": "ta ok"
+        },
+        {
+          "text": "yeah"
+        },
+        {
+          "text": "yep"
+        },
+        {
+          "text": "yes"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "iniciar",
+      "examples": [
+        {
+          "text": "ae"
+        },
+        {
+          "text": "boa noite"
+        },
+        {
+          "text": "boa tarde"
+        },
+        {
+          "text": "bom dia"
+        },
+        {
+          "text": "dia"
+        },
+        {
+          "text": "eae"
+        },
+        {
+          "text": "noite"
+        },
+        {
+          "text": "oi"
+        },
+        {
+          "text": "oie"
+        },
+        {
+          "text": "oii"
+        },
+        {
+          "text": "olá"
+        },
+        {
+          "text": "opa"
+        },
+        {
+          "text": "tarde"
+        },
+        {
+          "text": "tudo bem?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Negação",
+      "examples": [
+        {
+          "text": "n"
+        },
+        {
+          "text": "nah"
+        },
+        {
+          "text": "nam"
+        },
+        {
+          "text": "nao"
+        },
+        {
+          "text": "não"
+        },
+        {
+          "text": "não to afim"
+        },
+        {
+          "text": "nem"
+        },
+        {
+          "text": "nem a pau"
+        },
+        {
+          "text": "nop"
+        },
+        {
+          "text": "nopz"
+        },
+        {
+          "text": "not"
+        },
+        {
+          "text": "quero n"
+        },
+        {
+          "text": "quero não"
+        },
+        {
+          "text": "quero não vlw"
+        },
+        {
+          "text": "to afim n"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "pedir_pizza",
+      "examples": [
+        {
+          "text": "comprar pizza"
+        },
+        {
+          "text": "eaewww mada a pizaaa"
+        },
+        {
+          "text": "eu gostaria de uma pizza"
+        },
+        {
+          "text": "manda uma piza aew"
+        },
+        {
+          "text": "manda uma pizza"
+        },
+        {
+          "text": "mim da uma puza"
+        },
+        {
+          "text": "mim da uma puza aew"
+        },
+        {
+          "text": "olá meu bom senhor, gostaria muito de adquirir uma pitza"
+        },
+        {
+          "text": "pitza"
+        },
+        {
+          "text": "piza"
+        },
+        {
+          "text": "pizza"
+        },
+        {
+          "text": "puza"
+        },
+        {
+          "text": "puzza"
+        },
+        {
+          "text": "quanto custa a pizza"
+        },
+        {
+          "text": "quero pizza"
+        },
+        {
+          "text": "quero uma pizza"
+        },
+        {
+          "text": "ta saindo pizza hoje?"
+        },
+        {
+          "text": "tem pizza hoje"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "pedir_refrigerante",
+      "examples": [
+        {
+          "text": "manda um refri"
+        },
+        {
+          "text": "quero um refri"
+        },
+        {
+          "text": "refri"
+        },
+        {
+          "text": "refrigerante"
+        },
+        {
+          "text": "tem refri?"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "sabores_pizza",
+      "examples": [
+        {
+          "text": "o q tem de bom hoje?"
+        },
+        {
+          "text": "o que tem hoje?"
+        },
+        {
+          "text": "por favor, quais são os sabores de pizza?"
+        },
+        {
+          "text": "q q tem hoje?"
+        },
+        {
+          "text": "quais são os sabores?"
+        },
+        {
+          "text": "sabores"
+        }
+      ],
+      "description": "Informação sobre os sabores de pizza."
+    }
+  ],
+  "entities": [
+    {
+      "entity": "Sabor_Pizza",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "4 queijos",
+          "synonyms": [
+            "4qeijo",
+            "4qejo",
+            "4qejos",
+            "4 qjo",
+            "4qjo",
+            "4qjos",
+            "4 queijo",
+            "4queijo",
+            "4 queijos",
+            "4queijos",
+            "4 quejo",
+            "4quejo",
+            "qejo",
+            "quato queijo",
+            "quatro queijos",
+            "queijo"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Bacon",
+          "synonyms": [
+            "bacon",
+            "baicon",
+            "bcon",
+            "becon",
+            "beicon"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Calabresa",
+          "synonyms": [
+            "calabesa",
+            "calabresa",
+            "calbresa",
+            "klabresa"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Frango",
+          "synonyms": [
+            "fango",
+            "flango",
+            "frago",
+            "frango",
+            "frangu"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Mozarela",
+          "synonyms": [
+            "moçarela",
+            "mosçarela",
+            "mosrela",
+            "mossarela",
+            "mossarella",
+            "mozarella",
+            "mozzarela",
+            "mozzarella",
+            "muçarela",
+            "muçarella",
+            "mussarela",
+            "muzarela",
+            "muzzarela"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Pepperroni",
+          "synonyms": [
+            "peperone",
+            "peperoni",
+            "peperonni",
+            "pepperone",
+            "pepperroni",
+            "peprone",
+            "peproni",
+            "pperone",
+            "pperoni",
+            "pproni"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Sabor_Refrigerante",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Coca-Cola",
+          "synonyms": [
+            "coca",
+            "coca cola",
+            "coca-cola",
+            "cocacola",
+            "coka",
+            "coka cola",
+            "cokacola",
+            "cola"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Guaraná",
+          "synonyms": [
+            "ganra",
+            "garana",
+            "garaná",
+            "graná",
+            "guarana",
+            "guaraná",
+            "guaranar",
+            "guarna",
+            "guranar"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Pepsi",
+          "synonyms": [
+            "pepi",
+            "pepsi",
+            "ppi",
+            "ppsi"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Bem-vindo",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Olá, senha bem vindo. Qual sabor de pizza você deseja?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "context": {},
+      "conditions": "welcome || #iniciar",
+      "dialog_node": "Bem-vindo",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Em outros casos",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Eu não entendi. Por favor, tente reformular a frase."
+              },
+              {
+                "text": "Você pode reformular sua afirmação? Eu não estou entendendo."
+              },
+              {
+                "text": "Eu não entendi o sentido. Por favor, tente novamente."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Em outros casos",
+      "previous_sibling": "node_5_1616081206189",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1632077645019",
+      "context": {
+        "Sabor_Refrigerante": "@Sabor_Refrigerante"
+      },
+      "conditions": "@Sabor_Refrigerante",
+      "event_name": "input",
+      "dialog_node": "handler_10_1632077645020"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1632076192263",
+      "context": {
+        "Sabor_Refrigerante": "@Sabor_Refrigerante"
+      },
+      "conditions": "@Sabor_Refrigerante",
+      "event_name": "input",
+      "dialog_node": "handler_1_1632076192263"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_5_1616081206189",
+      "disabled": true,
+      "event_name": "focus",
+      "dialog_node": "handler_14_1632065682796"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_10_1632074442275",
+      "disabled": true,
+      "event_name": "focus",
+      "dialog_node": "handler_15_1632077762007"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_7_1616083185465",
+      "event_name": "focus",
+      "dialog_node": "handler_2_1616083185483",
+      "previous_sibling": "handler_8_1616083185483"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_3_1632077645019",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1632077645020",
+      "previous_sibling": "handler_10_1632077645020"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_9_1632076192263",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1632076192263",
+      "previous_sibling": "handler_1_1632076192263"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_7_1616083185465",
+      "context": {
+        "Sabor_Pizza": "@Sabor_Pizza"
+      },
+      "conditions": "@Sabor_Pizza",
+      "event_name": "input",
+      "dialog_node": "handler_8_1616083185483"
+    },
+    {
+      "type": "standard",
+      "title": "Negar Refrigerante",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Desculpa, não entendi sua resposta. Caso não queira refrigerante, digite \"Não\", caso contrário, digite um dos refrigerantes informados anteriormente."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1616081206189",
+      "context": {},
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_6_1616081587192"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_10_1632074442275",
+      "previous_sibling": "node_6_1616081587192",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Sabores",
+      "output": {
+        "generic": [
+          {
+            "title": "Por favor, escolha um dos sabores:",
+            "options": [
+              {
+                "label": "4 queijos",
+                "value": {
+                  "input": {
+                    "text": "4 queijos"
+                  }
+                }
+              },
+              {
+                "label": "Bacon",
+                "value": {
+                  "input": {
+                    "text": "Bacon"
+                  }
+                }
+              },
+              {
+                "label": "Calabresa",
+                "value": {
+                  "input": {
+                    "text": "Calabresa"
+                  }
+                }
+              },
+              {
+                "label": "Frango",
+                "value": {
+                  "input": {
+                    "text": "Frango"
+                  }
+                }
+              },
+              {
+                "label": "Mozarela",
+                "value": {
+                  "input": {
+                    "text": "Mozarela"
+                  }
+                }
+              },
+              {
+                "label": "Pepperroni",
+                "value": {
+                  "input": {
+                    "text": "Pepperroni"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#sabores_pizza || #pedir_pizza",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_2_1632067193493",
+      "previous_sibling": "Bem-vindo",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Falha na confirmação.",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Desculpa, não entendi sua resposta. Escreva sim para confirmar e não para negar."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1616081587192",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_8_1632068904830"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_3_1632079101248",
+      "previous_sibling": "node_8_1632068904830",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "frame",
+      "title": "Pedir pizza",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Sabor_Pizza || (@Sabor_Pizza && @Sabor_Refrigerante)",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_5_1616081206189",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_2_1632067193493",
+      "digress_out_slots": "not_allowed",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "frame",
+      "title": "Confirmação do pedido",
+      "parent": "node_5_1616081206189",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "$Sabor_Pizza && (#Negação || @Sabor_Refrigerante)",
+      "dialog_node": "node_6_1616081587192",
+      "previous_sibling": "slot_9_1632076192263",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "Finalizar operação",
+      "parent": "node_6_1616081587192",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "Bem-vindo"
+      },
+      "conditions": "#Confirmacao || #Negação",
+      "dialog_node": "node_8_1632068904830",
+      "previous_sibling": "slot_3_1632077645019",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Gostaria de pedir refrigerante? Temos as seguintes opções:",
+            "options": [
+              {
+                "label": "Coca-cola",
+                "value": {
+                  "input": {
+                    "text": "Coca-cola"
+                  }
+                }
+              },
+              {
+                "label": "Guaraná",
+                "value": {
+                  "input": {
+                    "text": "Guaraná"
+                  }
+                }
+              },
+              {
+                "label": "Pepsi",
+                "value": {
+                  "input": {
+                    "text": "Pepsi"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1616081206189",
+      "conditions": "!$Sabor_Refrigerante",
+      "dialog_node": "response_10_1632061599803",
+      "previous_sibling": "handler_14_1632065682796"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Apenas para finalizarmos, seu pedido foi por uma pizza de $Sabor_Pizza e $Sabor_Refrigerante?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1616081587192",
+      "context": {},
+      "conditions": "$Sabor_Pizza && $Sabor_Refrigerante",
+      "dialog_node": "response_1_1632062229405",
+      "previous_sibling": "node_3_1632079101248"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Desculpa, ainda estou em treinamento. Por favor, tente fazer seu pedido novamente."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1632068904830",
+      "context": {
+        "Sabor_Pizza": "",
+        "Sabor_Refrigerante": ""
+      },
+      "conditions": "#Negação && !#Confirmacao",
+      "dialog_node": "response_1_1632069040391",
+      "previous_sibling": "response_2_1632068945631"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Obrigado pela preferência, iremos preparar seu pedido nesse instante e logo estará pronto."
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_8_1632068904830",
+      "conditions": "#Confirmacao && !#Negação",
+      "dialog_node": "response_2_1632068945631"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Apenas para finalizarmos, seu pedido foi por uma pizza de $Sabor_Pizza?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1616081587192",
+      "conditions": "$Sabor_Pizza && !$Sabor_Refrigerante",
+      "dialog_node": "response_2_1632074809627",
+      "previous_sibling": "response_1_1632062229405"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1616081206189",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_6_1616081587192"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "response_7_1632078695102",
+      "previous_sibling": "response_10_1632061599803"
+    },
+    {
+      "type": "slot",
+      "parent": "node_6_1616081587192",
+      "variable": "$Sabor_Refrigerante",
+      "dialog_node": "slot_3_1632077645019"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_5_1616081206189",
+      "variable": "$Sabor_Pizza",
+      "dialog_node": "slot_7_1616083185465",
+      "previous_sibling": "response_7_1632078695102"
+    },
+    {
+      "type": "slot",
+      "parent": "node_5_1616081206189",
+      "variable": "$Sabor_Refrigerante",
+      "dialog_node": "slot_9_1632076192263",
+      "previous_sibling": "slot_7_1616083185465"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": "Você quis dizer:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "Nenhuma das anteriores"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Você quis dizer:"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "Pizzaria",
+  "language": "pt-br",
+  "description": ""
+}
